@@ -1,0 +1,7 @@
+@use 'variables';
+
+@mixin border($color, $radius, $padx, $pady) {
+    background-color: $color;
+    border-radius: $radius;
+    padding: $padx $pady;
+}

@@ -1,0 +1,13 @@
+@use 'variables';
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+} 
+
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: variables.$neutral;
+    margin-bottom: 10px;
+}

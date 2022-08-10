@@ -1,0 +1,103 @@
+@use '../variables';
+@use 'mixins';
+
+.card{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+   &-body{
+   width:30rem;
+   min-height: 30vh;
+   background-color: variables.$neutral-dark2;
+   padding: 3rem;
+   border-radius: 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   position: relative;
+   z-index: 2;
+
+   img.star{
+    width: 1.3rem;
+    height: 1.3rem;
+   @include mixins.border(variables.$neutral-dark, 50%, 1.3rem, 1.3rem);
+   }
+
+   ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    li{
+        a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: variables.$neutral-medium;
+            display: block;
+            @include mixins.border(variables.$neutral-dark, 100%, 1rem, 1.5rem);
+            text-align: center;
+
+            &:hover{
+                color: variables.$neutral;
+                @include mixins.border(variables.$primary-color, 100%, 1rem, 1.5rem);
+            }
+
+        }
+        .rate{
+            background-color: variables.$neutral-light;
+            color:variables.$neutral ;
+        }
+   }
+
+    }
+
+
+   button{
+    align-self: center;
+    border: none;
+    @include mixins.border(variables.$primary-color, 5rem, 1rem, 12rem);
+
+    &:hover{
+        color: variables.$primary-color;
+        @include mixins.border(variables.$neutral, 5rem, 1rem, 12rem);
+    }
+    a{
+        text-decoration: none;
+        color: variables.$neutral;
+    }
+   } 
+   }
+
+   &-body2{
+
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+
+   img.feed-back{
+    width: 20rem;
+    height: 13rem;
+   }
+   #rated{
+    width: 20rem;
+    font-size: 15px;
+    color: variables.$neutral;
+    @include mixins.border(variables.$neutral-dark, 5rem, 1rem, 0rem);
+    text-align: center;
+   }
+
+   }
+   &-texts2{
+    text-align: center;
+   }
+   .show{
+    z-index: 5;
+    opacity: 1;
+}
+} 
