@@ -1,0 +1,14 @@
+@use 'variables';
+
+h1{
+    font-size: 1.2rem;
+    color: variables.$primary-color2;
+    letter-spacing: 2px;
+    // margin-bottom: 2.5rem;
+}
+
+P{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}

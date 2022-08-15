@@ -1,0 +1,2 @@
+const cardBodyAdvice=document.querySelector("section .card-body p"),adviceNumber=document.querySelector("section .card-body h1 span");async function getAdvice(){const e=(await axios.get("https://api.adviceslip.com/advice")).data;console.log(e.slip),cardBodyAdvice.innerText=`"${e.slip.advice}"`,adviceNumber.innerText=`#${e.slip.id}`}const dice=document.querySelector("section .dice");dice.addEventListener("click",(()=>{getAdvice().catch((e=>{console.log(e)}))}));
+//# sourceMappingURL=app.js.map
