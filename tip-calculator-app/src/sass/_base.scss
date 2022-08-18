@@ -1,0 +1,20 @@
+@use  'variables';
+@use 'typography';
+
+*,
+*::before,
+*::after { 
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+  color: variables.$neutral-dark2;
+  font-family: 'https://fonts.google.com/specimen/Overpass' ;
+}
+
+::selection {
+  color: variables.$neutral-medium;
+}

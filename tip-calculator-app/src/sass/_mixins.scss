@@ -1,0 +1,34 @@
+@use 'variables';
+
+@mixin inputs($bg-color, $color, $padx, $pady, $align) {
+    background-color: $bg-color;
+    color: $color;
+    padding: $padx $pady;
+    text-align: $align;
+    box-sizing : border-box;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+
+    &:focus{
+        outline: none;
+        border: 2px solid variables.$primary-color;
+        color: variables.$neutral-dark2;
+    }
+}
+
+@mixin bg-image($url) {
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-position: 1rem 0.8rem;
+    background-size: 0.8rem;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == small {
+      @media only screen and (max-width: 31.25em) {
+        @content;
+      } //500px  (500px/16px = 31.25em)
+    }
+  }
+  

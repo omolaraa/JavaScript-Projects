@@ -1,0 +1,25 @@
+@use 'variables';
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+}  
+
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: variables.$neutral-dark2;
+    margin-bottom: 10px;
+}
+
+.label-input{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    p{
+        font-size: 1rem;
+        // text-align: right;
+        align-self: flex-end;
+        color: red;
+    }
+}

@@ -1,0 +1,43 @@
+{
+	"name": "is-gif",
+	"version": "4.0.1",
+	"description": "Check if a Buffer/Uint8Array is a GIF image",
+	"license": "MIT",
+	"repository": "sindresorhus/is-gif",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"gif",
+		"graphics",
+		"image",
+		"picture",
+		"photo",
+		"type",
+		"detect",
+		"check",
+		"is",
+		"exif",
+		"binary",
+		"buffer",
+		"uint8array"
+	],
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.44.0"
+	}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/css/styles.css">
+    <title>Advice generator app</title>
+</head>
+<body>
+    <section class="card">
+        <div class="card-body">
+           <div class="bill-tip">
+            <form action="#">
+                
+                 <label class="label-input" for="bill">Bill
+                    <p class="message"></p>
+                  <input type="text" name="bill" id="bill" class="input" placeholder="0" required>
+                </label>
+
+                    <label  class="label-input" for="custom">Select Tip %
+                        <p class="message"></p>
+                    <div class="tips">
+                        <input type="button" name="tips" class="tip" value="5">
+                        <input type="button" name="tips" class="tip" value="10">
+                        <input type="button" name="tips" class="tip" value="15">
+                        <input type="button" name="tips" class="tip" value="25">
+                        <input type="button" name="tips" class="tip" value="50">
+                        <input type="text" name="tips" class="input tip" id="custom" placeholder="Custom" required>
+                    </div>
+                </label>
+                
+                <label class="label-input" for="people">Number of People
+                    <p class="message"></p> 
+                 <input type="text" name="people" id="people" class="input" placeholder="0" required>
+                </label>
+            </form>
+           </div>
+           <div class="total-amount">
+            <div class="calculated tip-amount">
+                <div class="side-text">
+                    <h2>Tip Amount</h2>
+                    <p>/ person</p>
+                </div>
+                <p class="calculated-price">$0.00</p>
+            </div>
+            <div class="calculated total">
+                <div class="side-text">
+                    <h2>Total</h2>
+                    <p>/ person</p>
+                </div>
+                <p class="calculated-price">$0.00</p>
+            </div>
+            <button class="reset">RESET</button>
+           </div>
+        
+       </div>
+    </section>
+    <script src="./dist/js/app.js"></script>
+</body>
+</html>
